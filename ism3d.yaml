@@ -1,0 +1,17 @@
+name: ism3d
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - conda-ecosystem-user-package-isolation
+  - python=3.10
+  - ipython
+  - pip
+  - build
+  - cupy # easy binary whl
+  - python-casacore # easy binary whl
+  - pip:
+      - --extra-index-url https://casa-pip.nrao.edu/repository/pypi-group/simple
+      - .[dev]

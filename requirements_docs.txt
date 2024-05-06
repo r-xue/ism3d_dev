@@ -1,0 +1,11 @@
+commonmark
+recommonmark
+nbsphinx
+sphinx_rtd_theme
+furo
+sphinxcontrib-bibtex
+sphinx-astrorefs 
+sphinx-copybutton
+sphinx-markdown-tables
+ipympl
+nodejs

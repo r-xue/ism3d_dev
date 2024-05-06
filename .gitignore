@@ -1,1 +1,8 @@
 dist/
+notes/
+build/
+
+*.egg-info/
+
+__pycache__/
+*.py[cod]

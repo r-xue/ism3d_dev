@@ -9,14 +9,15 @@ authors = [{ name = "Rui Xue", email = "rx.astro@icloud.com" }]
 description = "ISM3D: Interferometric Source Modeling in 3D"
 readme = "README.md"
 requires-python = ">=3.8"
+dynamic = ["dependencies", "optional-dependencies"]
 
 classifiers = [
     'Development Status :: 2 - Pre-Alpha',
     'Intended Audience :: Developers',
-    "Intended Audience :: Science/Research",    
+    "Intended Audience :: Science/Research",
     'License :: OSI Approved :: BSD License',
     'Natural Language :: English',
-    "Topic :: Scientific/Engineering :: Astronomy",    
+    "Topic :: Scientific/Engineering :: Astronomy",
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
@@ -26,3 +27,8 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/r-xue/ism3d"
 Issues = "https://github.com/r-xue/ism3d/issues"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies.dev = { file = ["requirements_dev.txt"] }
+optional-dependencies.docs = { file = ["requirements_docs.txt"] }

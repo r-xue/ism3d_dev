@@ -1,0 +1,39 @@
+# I/O 
+#   Note that one needs to set the environment variable to enable the NRAO index: 
+#       PIP_EXTRA_INDEX_URL="https://casa-pip.nrao.edu/repository/pypi-group/simple"
+# note: 
+casatools==6.6.3.*  ; platform_machine != "arm64"
+casatasks==6.6.3.*  ; platform_machine != "arm64"
+# native ARM64 builds for ver6.6.4.*
+casatools==6.6.4.*  ; platform_machine == "arm64"
+casatasks==6.6.4.*  ; platform_machine == "arm64"
+python-casacore
+
+# Astronomy / Radio
+casadata
+regions
+reproject
+radio-beam
+spectral-cube
+xradio
+
+# Computing / Parallelization
+dask
+distributed
+
+# Presentation
+bokeh
+jinja2
+
+# Transform
+finufft
+cupy        ; platform_machine != "arm64"
+cufinufft   ; platform_machine != "arm64"
+
+# Profiling
+line_profiler
+memory_profiler
+
+# Env / Utilities
+jupyterlab
+wurlitzer
